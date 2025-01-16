@@ -10,7 +10,7 @@ $("#consultation-form").on("submit", async function (e) {
         email: $("#email").val().toLocaleString(),
         status: $("#status").val().toLocaleString(),
         content: $("#content").val().toLocaleString(),
-        timestamp: new Date().toLocaleString()
+        timestamp: new Date().toISOString()
     }
 
     await fetch(
@@ -38,4 +38,25 @@ $("#consultation-form").on("submit", async function (e) {
             alert("Something went wrong. Please try again.");
 
         });
+
+    const backendUrl = "http://localhost:8080/people";
+
+    await $.ajax({
+        url: backendUrl,
+        type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "POST",
+            "Access-Control-Allow-Headers": "Content-Type",
+        },
+        success: function (response) {
+            console.log(response);
+        },
+        error: function (error) {
+            console.log(error);
+        },
+
+    });
 });
