@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #ffffff;
+  --accent-color: #0066cc;
+  --text-color: #333333;
+  --light-gray: #f3f4f6;
+  --gray: #9ca3af;
+  --white: #ffffff;
+  --success-color: #10b981;
+  --banner-primary-color: #2563eb;
+  --banner-secondary-color: #1e40af;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+  background: rgba(0, 51, 102, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.logo img {
+  width: 200px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--secondary-color);
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+  color: var(--accent-color);
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hamburger .before,
+.hamburger .after {
+  display: none;
+  flex-direction: column;
+  width: 25px;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger .before {
+  display: none;
+  color: white;
+}
+
+.hamburger .after {
+  display: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger .before {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: rgba(0, 51, 102, 0.95);
+    padding: 1rem 0;
+    gap: 0;
+  }
+
+  .nav-links.actived {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 5%;
+    width: 100%;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .hamburger.actived .after {
+    display: block;
+  }
+
+  .hamburger.actived .before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 1rem;
+  }
+}

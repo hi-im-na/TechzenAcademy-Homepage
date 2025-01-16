@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="vi" class="loading-site no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <title>Khoá học Java Backend - Techzen Academy</title>
+    <link rel="stylesheet" href="../../css/common/course.css" />
+    <link rel="stylesheet" href="../../css/course-detail.css" />
+    <link rel="stylesheet" href="../../css/common/course_2.css" />
+    <link rel="stylesheet" href="../../css/common/footer.css" />
+    <link rel="stylesheet" href="../../css/common/zalo.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        id="jquery-core-js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+        id="jquery-migrate-js"></script>
+</head>
+
+<body
+    class="page-template page-template-page-blank page-template-page-blank-php page page-id-277 header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border parallax-mobile">
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            background-color: #003366;
+            transition: all 0.3s ease;
+            background: rgba(0, 51, 102, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            font-weight: 500;
+            position: relative;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin-left: 8px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #0066cc;
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #0066cc;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger .before,
+        .hamburger .after {
+            display: none;
+            flex-direction: column;
+            width: 25px;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .hamburger .before {
+            display: none;
+            color: white;
+        }
+
+        .hamburger .after {
+            display: none;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger .before {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background: rgba(0, 51, 102, 0.95);
+                padding: 1rem 0;
+                gap: 0;
+            }
+
+            .nav-links.actived {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 1rem 5%;
+                width: 100%;
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .hamburger.actived .after {
+                display: block;
+            }
+
+            .hamburger.actived .before {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../../img/common/TechzenAcademyLogo.png" alt="Logo" />
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars before"></i>
+            <i class="fa-solid fa-xmark after"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html#introduction">Giới thiệu</a></li>
+            <li><a href="../../index.html#courses">Khoá học</a></li>
+            <li><a href="../../index.html#instructors">Giảng viên</a></li>
+            <li><a href="../../index.html#feedbacks">Cảm nhận</a></li>
+            <li><a href="../../index.html#news">Tin tức</a></li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+        <main id="main" class>
+            <div id="content" role="main" class="content-area">
+                <section class="section page-banner" id="section_1962830782">
+                    <div class="bg section-bg fill bg-fill bg-loaded"></div>
+
+                    <div class="section-content relative">
+                        <div class="img has-hover hide-for-medium x md-x lg-x y md-y lg-y" id="image_749565772">
+                            <div class="img-inner dark">
+                                <img fetchpriority="high" decoding="async" width="2000" height="834"
+                                    src="../../img/courses detail/Java_Backend_Banner.jpg"
+                                    class="attachment-large size-large" alt="It Fresher Web" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="row align-middle page-kh page-kh1" id="row-1356061059">
+                    <div id="col-116113844" class="col col-left medium-6 small-12 large-6" data-animate="fadeInUp">
+                        <div class="col-inner">
+                            <h1>
+                                Chương trình đào tạo <br />Java Backend – Techzen Academy
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div id="col-1772323254" class="col col-right medium-6 small-12 large-6" data-animate="fadeInUp">
+                        <div class="col-inner">
+                            <div id="text-4224133095" class="text noidung">
+                                <p>
+                                    Chương trình đào tạo và thực tập kết hợp cung cấp kiến thức,
+                                    kỹ năng giúp bạn trở thành Java Backend với lộ trình 3
+                                    tháng!
+                                </p>
+                            </div>
+
+                            <a href="#dang-ky" class="button primary lowercase bt1" style="border-radius: 5px">
+                                <span>Đăng ký ngay</span>
+                            </a>
+
+                            <a href="#lo-trinh" class="button primary is-outline lowercase bt2"
+                                style="border-radius: 5px">
+                                <span>Xem lộ trình đào tạo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row page-kh page-kh2" id="row-945164679">
+                    <div id="col-1956522870" class="col col-left medium-12 small-12 large-9" data-animate="fadeInUp">
+                        <div class="col-inner">
+                            <div id="text-1624936115" class="text tieude">
+                                <h2>Giới thiệu khóa học</h2>
+                            </div>
+
+                            <div id="stack-3223902979" class="stack st1 stack-row justify-start items-stretch">
+                                <div class="icon-box featured-box icon-box-left text-left">
+                                    <div class="icon-box-img" style="width: 20px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <img decoding="async" width="20" height="20"
+                                                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                                                    data-src="https://rikkei.edu.vn/wp-content/uploads/2024/01/icon-kh1.png"
+                                                    class="lazy-load attachment-medium size-medium" alt="Icon Kh1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">THỜI GIAN</h5>
+
+                                        <p>3 tháng</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-left text-left">
+                                    <div class="icon-box-img" style="width: 20px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <img decoding="async" width="21" height="20"
+                                                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2021%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                                                    data-src="https://rikkei.edu.vn/wp-content/uploads/2024/01/icon-kh2.png"
+                                                    class="lazy-load attachment-medium size-medium" alt="Icon Kh2" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">ĐỐI TƯỢNG</h5>
+
+                                        <p>Sinh viên CNTT năm 2,3,4</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-left text-left">
+                                    <div class="icon-box-img" style="width: 20px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <img decoding="async" width="20" height="20"
+                                                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                                                    data-src="https://rikkei.edu.vn/wp-content/uploads/2024/01/icon-kh1.png"
+                                                    class="lazy-load attachment-medium size-medium" alt="Icon Kh1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">HÌNH THỨC</h5>
+
+                                        <p>Offline</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="stack-1699993666" class="stack st2 stack-row justify-start items-stretch">
+                                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1866703243">
+                                    <a class="open-video" href="">
+                                        <div class="img-inner dark">
+                                            <img decoding="async" width="1200" height="675"
+                                                src="../../img/courses/Java_Backend_11_2_2025.jpg" data-src=""
+                                                class="lazy-load attachment-large size-large" alt="" />
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="text-1437493750" class="text noidung">
+                                    <p>
+                                        Chương trình đào tạo Java Backend &#8211; Techzen Academy
+                                        hướng đến các bạn sinh viên CNTT năm 2, 3, 4. Với mục tiêu
+                                        lấp đầy bộ kỹ năng thực tiễn ngoài giảng đường và hoàn
+                                        thiện kiến thức, giúp các bạn thực sự trở nên khác biệt,
+                                        tự tin trở thành Java Backend mà mọi doanh nghiệp săn đón!
+                                    </p>
+                                </div>
+
+                                <a href="#lo-trinh" class="button primary lowercase" style="border-radius: 5px">
+                                    <span>Xem lộ trình đào tạo</span>
+                                </a>
+                            </div>
+
+                            <div id="stack-607224998" class="stack st3 stack-row justify-start items-stretch">
+                                <div id="text-4277970273" class="text tieude">
+                                    <h2>Tại sao bạn nên chọn Techzen Academy để bắt đầu?</h2>
+                                    <p>
+                                        Với bề dày kinh nghiệm trong đào tạo, Techzen Academy xây
+                                        dựng một lộ trình học độc đáo, tập trung vào kiến thức và
+                                        kỹ năng thực tiễn. Khóa học sẽ trang bị cho bạn nền tảng
+                                        vững chắc, giúp bạn tự tin bước vào ngành Công nghệ thông
+                                        tin với vai trò Java Backend Developer.
+                                    </p>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-top text-left">
+                                    <div class="icon-box-img" style="width: 40px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <i class="fa-solid fa-stamp"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">
+                                            Cơ hội thực tập và xác nhận chính thức
+                                        </h5>
+
+                                        <p>
+                                            Tham gia khóa học, bạn sẽ được trải nghiệm thực tế qua
+                                            dự án thật tại Techzen và nhận giấy xác nhận thực tập
+                                            phù hợp với yêu cầu nhà trường
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-top text-left">
+                                    <div class="icon-box-img" style="width: 40px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <i class="fa-solid fa-circle-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">Chứng chỉ đào tạo chuyên nghiệp</h5>
+
+                                        <p>
+                                            Hoàn thành khóa học, bạn sẽ được cấp chứng chỉ từ
+                                            Techzen, giúp khẳng định năng lực và ghi điểm trong mắt
+                                            nhà tuyển dụng
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-top text-left">
+                                    <div class="icon-box-img" style="width: 40px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <i class="fa-solid fa-medal"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">Cam kết việc làm từ Techzen</h5>
+
+                                        <p>
+                                            Sinh viên xuất sắc khóa học sẽ được hỗ trợ giới thiệu
+                                            việc làm và ứng tuyển vào các doanh nghiệp đối tác của
+                                            Techzen
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-top text-left">
+                                    <div class="icon-box-img" style="width: 40px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <i class="fa-solid fa-users"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">Rèn luyện kỹ năng thực tế</h5>
+
+                                        <p>
+                                            Đào tạo các kỹ năng chuyên sâu: xây dựng API với Spring
+                                            Boot, quản lý dự án, làm việc nhóm, Q&A và tự tin tham
+                                            gia phỏng vấn
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-top text-left">
+                                    <div class="icon-box-img" style="width: 40px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">Học phí ưu đãi hấp dẫn</h5>
+
+                                        <p>
+                                            Đăng ký sớm để nhận ngay ưu đãi giảm 500.000 đồng hoặc
+                                            giảm giá thêm khi đăng ký nhóm từ 2 người trở lên
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-box featured-box icon-box-top text-left">
+                                    <div class="icon-box-img" style="width: 40px">
+                                        <div class="icon">
+                                            <div class="icon-inner">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-text last-reset">
+                                        <h5 class="uppercase">Hành trang vươn ra quốc tế</h5>
+
+                                        <p>
+                                            Thành thạo Java Backend, sẵn sàng cho các cơ hội nghề
+                                            nghiệp trong nước và quốc tế với nền tảng kiến thức vững
+                                            chắc
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="col-828838361" class="col col-right medium-12 small-12 large-3 medium-col-first"
+                        data-animate="fadeInUp">
+                        <div class="is-sticky-column">
+                            <div class="is-sticky-column__inner">
+                                <div class="col-inner">
+                                    <div id="text-814321606" class="text noidung">
+                                        <h2>
+                                            Bạn là sinh viên CNTT và đang gặp phải những vấn đề...
+                                        </h2>
+                                        <h3>
+                                            <i class="fa-solid fa-circle-check"></i>Chật vật tìm nơi
+                                            thực tập
+                                        </h3>
+                                        <p>
+                                            Bạn mong muốn có cơ hội thực tập để áp dụng kiến thức,
+                                            rèn kỹ năng, hoặc đơn giản chỉ cần dấu mộc thực tập
+                                        </p>
+                                        <hr />
+                                        <h3>
+                                            <i class="fa-solid fa-circle-check"></i>Thiếu kinh
+                                            nghiệm thực tế
+                                        </h3>
+                                        Không rõ nhà tuyển dụng cần gì, chưa biết nên học và làm
+                                        từ đâu<br />
+                                        <hr />
+                                        <h3>
+                                            <i class="fa-solid fa-circle-check"></i>Không có định
+                                            hướng rõ ràng
+                                        </h3>
+                                        <p>
+                                            Bạn chưa xác định được con đường sự nghiệp phù hợp và
+                                            không biết bắt đầu từ đâu để xây dựng lộ trình phát
+                                            triển
+                                        </p>
+                                        <hr />
+                                        <h3>
+                                            <i class="fa-solid fa-circle-check"></i>Khó khăn khi ứng
+                                            tuyển Fresher
+                                        </h3>
+                                        <p>
+                                            CV của bạn thiếu điểm nổi bật, trong khi thị trường ngày
+                                            càng cạnh tranh khốc liệt
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="section page-kh page-kh3" id="section_9041642">
+                    <div class="bg section-bg fill bg-fill bg-loaded"></div>
+
+                    <div class="section-content relative">
+                        <span class="scroll-to" data-label="Scroll to: #lo-trinh" data-bullet="false"
+                            data-link="#lo-trinh" data-title="Change this"><a name="lo-trinh"></a></span>
+
+                        <div id="text-1343560302" class="text tieude">
+                            <h2>Lộ trình học tập</h2>
+                        </div>
+
+                        <div class="hbw-accordion">
+                            <div id="hbw-accordion-4124706332" class="accordion-item">
+                                <a id="hbw-accordion-4124706332-label" href="#" class="accordion-title plain"
+                                    aria-expanded="false" aria-controls="hbw-accordion-4124706332-content">
+                                    <div class="tit-main">
+                                        Module 01: Java Core + OOP - 3 tuần
+                                    </div>
+                                    <div class="small-title">
+                                        Tập trung vào các kiến thức và kỹ năng cơ bản về lập trình
+                                        Java, từ đó, có thể phát triển ứng dụng Java đơn giản như
+                                        ứng dụng quản lý nhân viên hay ứng dụng quản lý bán hàng…
+                                    </div>
+                                    <button class="toggle" aria-label="Toggle">Chi tiết</button>
+                                </a>
+                                <div id="hbw-accordion-4124706332-content" class="accordion-inner"
+                                    aria-labelledby="hbw-accordion-4124706332-label">
+                                    <div class="card-left">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Kiểu dữ liệu, biền, toán tử</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Câu lệnh điều kiện</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vòng lặp</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mảng, chuỗi, biểu thức chính quy</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Lập trình hướng đối tượng &#8211; Lớp và đối tượng
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kề thửa và đa hình</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nạp chống và ghi đè</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Trừu tượng &#8211; Lớp trừu tượng và Interface
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Generic và Collection</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cấu trúc dữ liệu và giải thuật</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Xử lý lỗi ngoại lệ &#8211; Exception</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Đọc ghi file</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Java-8: Lambda, Stream, Optional, DateTime&#8230;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Coding convention, Clean Code, Refactoring</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mock Project và 3 mini-projects</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="bor-bot"></div>
+                                    </div>
+                                    <div id="body-img"></div>
+                                </div>
+                            </div>
+                            <div id="hbw-accordion-1564553042" class="accordion-item">
+                                <a id="hbw-accordion-1564553042-label" href="#" class="accordion-title plain"
+                                    aria-expanded="false" aria-controls="hbw-accordion-1564553042-content">
+                                    <div class="tit-main">
+                                        Module 02: Database và JDBC - 2 tuần
+                                    </div>
+                                    <div class="small-title">
+                                        Xây dựng kiến thức JDBC cơ bản để kết nối và tương tác với
+                                        cơ sở dữ liệu từ Java và tham gia vào việc phát triển các
+                                        ứng dụng sử dụng cơ sở dữ liệu
+                                    </div>
+                                    <button class="toggle" aria-label="Toggle">Chi tiết</button>
+                                </a>
+                                <div id="hbw-accordion-1564553042-content" class="accordion-inner"
+                                    aria-labelledby="hbw-accordion-1564553042-label">
+                                    <div class="card-left">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Hệ quản trị cơ sở dữ liệu quan hệ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mô hình quan hệ thực thế</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bảng &#8211; Table và các rằng buộc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Thiết kế CSDL cho ứng dụng</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Các câu lệnh DML: select, insert, update, delete
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Truy vấn nâng cao</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>View và Index</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Thủ tục &#8211; Store procedure</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trigger</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transaction</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kiến trúc, các thành phần JDBC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Statement, Prepared Statement, Callable Statement
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Result Sets và Datatypes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>JDBC &#8211; Transactions</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mock Project và 2 mini-projects</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="bor-bot"></div>
+                                    </div>
+                                    <div id="body-img"></div>
+                                </div>
+                            </div>
+                            <div id="hbw-accordion-562431887" class="accordion-item">
+                                <a id="hbw-accordion-562431887-label" href="#" class="accordion-title plain"
+                                    aria-expanded="false" aria-controls="hbw-accordion-562431887-content">
+                                    <div class="tit-main">Module 03 - Spring Boot - 3 tuần</div>
+                                    <div class="small-title">
+                                        Tập trung vào các kiến thức và kỹ năng cần thiết về Rest
+                                        API với Spring để phát triển và triển khai các dịch vụ web
+                                        linh hoạt, bảo mật và có khả năng mở rộng
+                                    </div>
+                                    <button class="toggle" aria-label="Toggle">Chi tiết</button>
+                                </a>
+                                <div id="hbw-accordion-562431887-content" class="accordion-inner"
+                                    aria-labelledby="hbw-accordion-562431887-label">
+                                    <div class="card-left">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Kiến trúc ứng dụng web</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mô hình MVC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mẫu thiết kế &#8211; Design Patterns</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kiến trúc Rest</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>JPA và Spring Data JPA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Spring Core</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Spring Boot &#8211; thành phần, vòng đợi, luồng
+                                                        thực hiện, cấu hình
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Phát triển Rest API với Spring Boot</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bảo mật với Spring Security</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Xác thực với JWT và OAuth2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>API Document</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Triển khai ứng dụng với Docker và Kubernetes
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mock Project và 3 mini-projects</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="bor-bot"></div>
+                                    </div>
+                                    <div id="body-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section page-kh page-kh4" id="section_549769720">
+                    <div class="bg section-bg fill bg-fill bg-loaded"></div>
+
+                    <div class="section-content relative">
+                        <div class="icon-box featured-box icon-box-center text-center">
+                            <div class="icon-box-img" style="width: 40px">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-text last-reset">
+                                <h5 class="uppercase">Giảng viên, mentor hỗ trợ 24/7</h5>
+
+                                <p>
+                                    Mentor theo sát giúp học viên hoàn thành hết các nhiệm vụ
+                                    trong ngày. Không bỏ rơi lại học viên trong bất kỳ trường
+                                    hợp nào
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-box featured-box icon-box-center text-center">
+                            <div class="icon-box-img" style="width: 40px">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <i class="fa-solid fa-book-open"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-text last-reset">
+                                <h5 class="uppercase">
+                                    Thực chiến ngay trong quá trình học tập
+                                </h5>
+
+                                <p>
+                                    Tất cả học viên đều được tham giathực chiến và sở hữu ít
+                                    nhất 1 dự án trước khi tốt nghiệp
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-box featured-box icon-box-center text-center">
+                            <div class="icon-box-img" style="width: 40px">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-text last-reset">
+                                <h5 class="uppercase">
+                                    Bảo đảm việc làm sau khi kết thúc khóa học
+                                </h5>
+
+                                <p>
+                                    Cam kết việc làm với học viên tốt nghiệp xuất sắc theo tiêu
+                                    chí đánh giá doanh nghiệp
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="icon-box featured-box icon-box-center text-center">
+                            <div class="icon-box-img" style="width: 40px">
+                                <div class="icon">
+                                    <div class="icon-inner">
+                                        <i class="fa-solid fa-comments"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-text last-reset">
+                                <h5 class="uppercase">
+                                    Hỗ trợ học viên ngay cả sau khi tốt nghiệp
+                                </h5>
+
+                                <p>
+                                    Hỗ trợ chuyên môn lâu dài giúp học viên có một sự nghiệp ổn
+                                    định.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section home-section page-kh page-kh6" id="section_694534472">
+                    <div class="bg section-bg fill bg-fill"></div>
+
+                    <div class="section-content relative">
+                        <div id="stack-3910354935" class="stack col-left stack-row justify-start items-stretch">
+                            <div id="text-1604040938" class="text noidung">
+                                <h2>Trở thành Java Backend sáng giá chỉ sau 03 tháng</h2>
+                                <p>
+                                    Liên hệ với chúng tôi để bắt đầu hành trình Công nghệ thông
+                                    tin nhanh chóng và thành công!
+                                </p>
+                            </div>
+
+                            <div id="text-1697759528" class="text"></div>
+                        </div>
+
+                        <div id="stack-3566521591" class="stack col-right stack-row justify-start items-stretch">
+                            <span class="scroll-to" data-label="Scroll to: #dang-ky" data-bullet="false"
+                                data-link="#dang-ky" data-title="Change this"><a name="dang-ky"></a></span>
+
+                            <div id="text-775085762" class="text noidung">
+                                <h2>Khởi đầu khác biệt &#8211; Doanh nghiệp săn đón</h2>
+                                <p>Bắt đầu hành trình chinh phục Java cùng Techzen Academy</p>
+                            </div>
+
+                            <div class="wpcf7 no-js" id="wpcf7-f3450-p277-o1" lang="vi" dir="ltr">
+                                <div class="screen-reader-response">
+                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                    <ul></ul>
+                                </div>
+                                <form action="/it-fresher-rikkei-certificate/#wpcf7-f3450-p277-o1" method="post"
+                                    class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate"
+                                    data-status="init">
+                                    <div style="display: none">
+                                        <input type="hidden" name="_wpcf7" value="3450" />
+                                        <input type="hidden" name="_wpcf7_version" value="5.8.7" />
+                                        <input type="hidden" name="_wpcf7_locale" value="vi" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f3450-p277-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="277" />
+                                        <input type="hidden" name="_wpcf7_posted_data_hash" value />
+                                    </div>
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
+                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false" placeholder="Họ tên" value
+                                                type="text" name="your-name" /></span>
+                                    </p>
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40"
+                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                                aria-required="true" aria-invalid="false" placeholder="Email" value
+                                                type="email" name="your-email" /></span>
+                                    </p>
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="tel-961"><input size="40"
+                                                class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
+                                                aria-required="true" aria-invalid="false" placeholder="Số điện thoại"
+                                                value type="tel" name="tel-961" /></span>
+                                    </p>
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="menu-153"><select
+                                                class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                                aria-required="true" aria-invalid="false" name="menu-153">
+                                                <option value="" disabled selected>
+                                                    Bạn đang là
+                                                </option>
+                                                <option value="student">Sinh viên</option>
+                                                <option value="graduate">
+                                                    Sinh viên vừa tốt nghiệp
+                                                </option>
+                                                <option value="employee">Người đang đi làm</option>
+                                                <option value="other">Khác</option>
+                                            </select></span>
+                                    </p>
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="tel-962">
+                                            <textarea class="wpcf7-form-control wpcf7-validates-as-required wpcf7-text"
+                                                aria-required="true" aria-invalid="false"
+                                                placeholder="Nội dung cần tư vấn"></textarea>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
+                                            value="Đăng ký ngay" />
+                                    </p>
+                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <style>
+        .footer-section h3 {
+            color: white !important;
+        }
+    </style>
+
+    <div class="zalo-container left">
+        <a id="zalo-btn" href="https://zalo.me/0935505640" target="_blank" rel="noopener nofollow">
+        <div class="animated_zalo infinite zoomIn_zalo cmoz-alo-circle"></div>
+        <div class="animated_zalo infinite pulse_zalo cmoz-alo-circle-fill"></div>
+        <span><img src="../../img/common/zalo_2.png" alt="Contact Me on Zalo"></span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="../../img/common/TechzenAcademyLogo.png" alt="Logo" />
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/techzenacademy.vn"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@techzenacademy.vn"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Truy cập nhanh</h3>
+                <ul>
+                    <li><a href="../../index.html#introduction">Giới thiệu</a></li>
+                    <li><a href="../../index.html#courses">Khoá học</a></li>
+                    <li><a href="../../index.html#instructors">Giảng viên</a></li>
+                    <li><a href="../../index.html#feedbacks">Cảm nhận</a></li>
+                    <li><a href="../../index.html#news">Tin tức</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kết nối với chúng tôi</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> Tầng 3 - Số 06 Trần Phú, TP Đà
+                    Nẵng
+                </p>
+                <p><i class="fas fa-envelope"></i> academy@techzen.vn</p>
+                <p><i class="fas fa-phone"></i> +84 935 505 640</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Vị trí</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d122659.38604972733!2d108.20223654961376!3d16.111826219202122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142193416791427%3A0x62e566991f315b91!2sC%C3%B4ng%20Ty%20TNHH%20Techzen!5e0!3m2!1sen!2sus!4v1736827947599!5m2!1sen!2sus"
+                    width="100%" height="200" style="border: 0" allowfullscreen loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tech Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript"
+        src="https://rikkei.edu.vn/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.7"
+        id="swv-js"></script>
+    <script type="text/javascript" id="flatsome-js-js-extra">
+        /* <![CDATA[ */
+        var flatsomeVars = {
+            theme: { version: "3.18.1" },
+            ajaxurl: "https:\/\/rikkei.edu.vn\/wp-admin\/admin-ajax.php",
+            rtl: "",
+            sticky_height: "70",
+            stickyHeaderHeight: "0",
+            scrollPaddingTop: "0",
+            assets_url:
+                "https:\/\/rikkei.edu.vn\/wp-content\/themes\/hoabinhweb-v3-154\/assets\/",
+            lightbox: {
+                close_markup:
+                    '<button title="%title%" type="button" class="mfp-close"><svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"><\/line><line x1="6" y1="6" x2="18" y2="18"><\/line><\/svg><\/button>',
+                close_btn_inside: false,
+            },
+            user: { can_edit_pages: false },
+            i18n: { mainMenu: "Main Menu", toggleButton: "Toggle" },
+            options: {
+                cookie_notice_version: "1",
+                swatches_layout: false,
+                swatches_disable_deselect: false,
+                swatches_box_select_event: false,
+                swatches_box_behavior_selected: false,
+                swatches_box_update_urls: "1",
+                swatches_box_reset: false,
+                swatches_box_reset_limited: false,
+                swatches_box_reset_extent: false,
+                swatches_box_reset_time: 300,
+                search_result_latency: "0",
+            },
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154/assets/js/flatsome.js?ver=039f9485eef603e7c53a"
+        id="flatsome-js-js"></script>
+    <script type="text/javascript"
+        src="https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154/inc/extensions/flatsome-lazy-load/flatsome-lazy-load.js?ver=3.18.1"
+        id="flatsome-lazy-js"></script>
+</body>
+
+</html>
+
+<script src="../../js/navbar.js"></script>
