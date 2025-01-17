@@ -121,24 +121,24 @@ async function sendForm() {
 
         });
 
-    const backendUrl = "http://localhost:8080/people";
+    // const backendUrl = "http://localhost:8080/people";
 
-    await $.ajax({
-        url: backendUrl,
-        type: "POST",
-        data: JSON.stringify(data),
-        contentType: "application/json",
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type",
-        },
-        success: function (response) {
-            console.log(response);
-        },
-        error: function (error) {
-            console.log(error);
-        },
+    // await $.ajax({
+    //     url: backendUrl,
+    //     type: "POST",
+    //     data: JSON.stringify(data),
+    //     contentType: "application/json",
+    //     headers: {
+    //         "Access-Control-Allow-Origin": "*",
+    //         "Access-Control-Allow-Methods": "POST",
+    //         "Access-Control-Allow-Headers": "Content-Type",
+    //     },
+    //     success: function (response) {
+    //         console.log(response);
+    //     },
+    //     error: function (error) {
+    //         console.log(error);
+    //     },
 
-    });
+    // });
 };
