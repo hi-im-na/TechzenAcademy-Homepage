@@ -25,7 +25,7 @@ $(function () {
             email: {
                 required: true,
                 email: true,
-                pattern: "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$"
+                // pattern: "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$"
             },
             phone: {
                 required: true,
@@ -48,7 +48,7 @@ $(function () {
             email: {
                 required: "Vui lòng nhập email của bạn",
                 email: "Vui lòng nhập đúng định dạng email",
-                pattern: "Vui lòng nhập đúng định dạng email (vd: example@domain.com)"
+                // pattern: "Vui lòng nhập đúng định dạng email (vd: example@domain.com)"
             },
             phone: {
                 required: "Vui lòng nhập số điện thoại của bạn",
