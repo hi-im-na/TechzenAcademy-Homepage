@@ -142,3 +142,10 @@
 .consultation-other img {
   width: 25px;
 }
+
+label.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 300;
+}
