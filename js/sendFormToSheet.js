@@ -110,6 +110,7 @@ async function sendForm() {
         $("#submit-btn").attr("disabled", false);
         $("#submit-btn").html("Submit");
         $("#submit-btn").css("cursor", "pointer");
+        $("#consultation-form").trigger("reset");
         alert("Your message has been sent successfully.");
     })
         .catch(err => {
@@ -118,7 +119,6 @@ async function sendForm() {
             $("#submit-btn").html("Submit");
             $("#submit-btn").css("cursor", "pointer");
             alert("Something went wrong. Please try again.");
-
         });
 
     // const backendUrl = "http://localhost:8080/people";
