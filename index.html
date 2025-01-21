@@ -64,9 +64,9 @@
     </div>
   </header>
 
-  <div class="loading">
+  <!-- <div class="loading">
     <div class="loading-spinner"></div>
-  </div>
+  </div> -->
 
   <!-- Introduction Section -->
   <section id="introduction" class="section">
@@ -195,44 +195,49 @@
     <h1 class="section-title">Thông tin về các khoá học</h1>
     <div class="four-slide-slider">
       <div class="slides">
-        <div class="text-wrapper">
+        <!-- <div class="text-wrapper">
           <div class="feedback-card">
             <img src="./img/courses/AGILE.jpg" alt="Student 1" />
             <h3>Khoá học Agile</h3>
           </div>
-        </div>
+        </div> -->
         <div class="text-wrapper">
           <div class="feedback-card">
-            <img src="./img/courses/coding_thuc_chien.jpg" alt="Coding"
-              onclick="window.location.href='./html/courses/course-detail-Coding.html';" />
+            <img src="./img/courses/coding_thuc_chien.jpg" alt="Coding" onclick="(() => {
+                window.open('./html/courses/course-detail-Coding.html', '_blank');
+              })()" />
             <h3>Khoá học Coding thực chiến</h3>
           </div>
         </div>
         <div class="text-wrapper">
           <div class="feedback-card">
-            <img src="./img/courses/Java_Backend_11_2_2025.jpg" alt="Java Backend"
-              onclick="window.location.href='./html/courses/course-detail-java.html';" />
+            <img src="./img/courses/Java_Backend_11_2_2025.jpg" alt="Java Backend" onclick="(() => {
+                window.open('./html/courses/course-detail-java.html', '_blank');
+              })()" />
             <h3>Khoá học Java Backend</h3>
           </div>
         </div>
         <div class="text-wrapper">
           <div class="feedback-card">
-            <img src="./img/courses/lt_thuc_chien_10_2_2025.jpg" alt="Student 3"
-              onclick="window.location.href='./html/courses/course-detail-LT.html';" />
+            <img src="./img/courses/lt_thuc_chien_10_2_2025.jpg" alt="Student 3" onclick="(() => {
+                window.open('./html/courses/course-detail-LT.html', '_blank');
+              })()" />
             <h3>Khoá học IT thực chiến</h3>
           </div>
         </div>
         <div class="text-wrapper">
           <div class="feedback-card">
-            <img src="./img/courses/QC Thực chiến.jpg" alt="QC thực chiến"
-              onclick="window.location.href='./html/courses/course-detail-QC.html';" />
+            <img src="./img/courses/QC Thực chiến.jpg" alt="QC thực chiến" onclick="(() => {
+                window.open('./html/courses/course-detail-QC.html', '_blank');
+              })()" />
             <h3>Khoá học QC thực chiến</h3>
           </div>
         </div>
         <div class="text-wrapper">
           <div class="feedback-card">
-            <img src="./img/courses/tester.jpg" alt="Tester"
-              onclick="window.location.href='./html/courses/course-detail-tester.html';" />
+            <img src="./img/courses/tester.jpg" alt="Tester" onclick="(() => {
+                window.open('./html/courses/course-detail-tester.html', '_blank');
+              })()" />
             <h3>Khoá học Tester</h3>
           </div>
         </div>
@@ -329,8 +334,14 @@
       <div class="slides">
         <div class="text-wrapper">
           <div class="feedback-card">
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/9ixJ-UsnS88?si=-Z5OMZXCmu7qcGzw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
             <video controls>
-              <source src="img/feedback/20240820_101205000_iOS.MOV" type="video/mp4">
+              <source
+                src="https://onedrive.live.com/download?resid=BFCA24873E8ADCE2!38265&authkey=!AH5_v8tufmTrqDg&ithint=video%2cmp4"
+                type="video/mp4">
               Trình duyệt của bạn không hỗ trợ phát video.
             </video>
             <div class="feedback-content">
