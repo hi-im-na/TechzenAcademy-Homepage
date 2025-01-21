@@ -1,0 +1,8 @@
+.section-content .img-inner {
+    height: 55vh;
+    margin-top: -10vh;
+}
+
+.text.noidung > h2 {
+    background: none;
+}
