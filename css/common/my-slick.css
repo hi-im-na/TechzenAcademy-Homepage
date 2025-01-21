@@ -1,0 +1,15 @@
+.bottom-slider .slick-prev::before,
+.bottom-slider .slick-next::before {
+    color: red !important;
+    opacity: 0.5;
+    font-size: 50px;
+}
+
+.bottom-slider .slick-prev {
+    left: 50px !important;
+}
+
+.bottom-slider .slick-next {
+    right: 50px !important;
+}
+

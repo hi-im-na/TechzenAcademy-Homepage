@@ -139,7 +139,9 @@ body {
   background: white;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -158,6 +160,12 @@ body {
 }
 
 .instructor-avatar img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
@@ -204,7 +212,7 @@ body {
   height: 40px;
   background: rgba(11, 190, 255, 0.8);
   color: white;
-  border-radius: 25%;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,7 +309,8 @@ body {
   align-items: center;
 }
 
-.feedback-card img, .feedback-card video {
+.feedback-card img,
+.feedback-card video {
   width: 100%;
   height: auto !important;
   border-radius: 10px;
@@ -623,7 +632,9 @@ body {
 
 .content video {
   width: 39.5vw;
-  transition: transform 0.5s linear, box-shadow 0.5s linear;
+  transition:
+    transform 0.5s linear,
+    box-shadow 0.5s linear;
   border-radius: 15px;
 }
 
@@ -695,8 +706,8 @@ body {
 }
 
 .services {
-  max-width: 800px;
-  margin: 0 auto;
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
   margin-top: 20px;
 }
 
@@ -831,7 +842,9 @@ body {
   background: white;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -881,11 +894,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(3, 8, 119, 0.95),
-    rgba(30, 159, 240, 0.95)
-  );
+  background: linear-gradient(135deg, rgba(3, 8, 119, 0.95), rgba(30, 159, 240, 0.95));
   color: white;
   padding: 20px;
   transform: translateY(100%);
@@ -989,7 +998,9 @@ body {
 
 .slider-img img {
   width: 39.5vw;
-  transition: transform 0.5s linear, box-shadow 0.5s linear;
+  /* transition:
+    transform 0.5s linear,
+    box-shadow 0.5s linear; */
   border-radius: 15px;
 }
 
@@ -997,13 +1008,7 @@ body {
   padding: 0;
 }
 
-.slider-img
-  .slider-section
-  .slider-container
-  .about-slider
-  .slides
-  .text-wrapper
-  img {
+.slider-img .slider-section .slider-container .about-slider .slides .text-wrapper img {
   height: auto;
 }
 
@@ -1093,4 +1098,25 @@ body {
 
 #consultation {
   background-image: url("./img/common/AboutTechzenAcademy.jpg") !important;
+}
+
+#value video {
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Avoids extra whitespace */
+}
+
+#value .service-content h2 {
+  text-align: left;
+}
+
+.feedback-content {
+  height: 10em;
+}
+
+#courses img:hover {
+  cursor: pointer;
+}
+
+#instructors {
+  background: #e3f1ff;
 }
