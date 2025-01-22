@@ -66,6 +66,7 @@ function removeVietnameseDiacritics(str) {
 
 async function sendForm() {
     $("#submit-btn").attr("disabled", true);
+    $("#submit-btn").prop("disabled", true);
     $("#submit-btn").attr("value", "Đang gửi thông tin...");
     $("#submit-btn").html("Đang gửi thông tin...");
     $("#submit-btn").css("cursor", "not-allowed");
@@ -91,20 +92,24 @@ async function sendForm() {
         }
     ).then(res => {
         console.log("reas", res);
-        $("#submit-btn").attr("disabled", false);
-        $("#submit-btn").attr("value", "Đăng ký ngay");
-        $("#submit-btn").html("Đăng ký ngay");
-        $("#submit-btn").css("cursor", "pointer");
         $("#consultation-form").trigger("reset");
-        alert("Your message has been sent successfully.");
+        Swal.fire({
+            icon: "success",
+            title: "OK!",
+            text: "Đăng ký thành công. Hãy đợi nhân viên liên hệ nhé!",
+        });
     })
         .catch(err => {
             console.log(err);
-            $("#submit-btn").attr("disabled", false);
-            $("#submit-btn").attr("value", "Đăng ký ngay");
-            $("#submit-btn").html("Đăng ký ngay");
-            $("#submit-btn").css("cursor", "pointer");
-            alert("Something went wrong. Please try again.");
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Đăng ký thất bại! Vui lòng thử lại sau",
+            });
         });
-
+    $("#submit-btn").attr("disabled", false);
+    $("#submit-btn").prop("disabled", false);
+    $("#submit-btn").attr("value", "Đăng ký ngay");
+    $("#submit-btn").html("Đăng ký ngay");
+    $("#submit-btn").css("cursor", "pointer");
 };
