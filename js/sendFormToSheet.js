@@ -75,7 +75,7 @@ async function sendForm() {
         phone: $("#phone").val(),
         email: removeVietnameseDiacritics($("#email").val()),
         status: removeVietnameseDiacritics($("#status").val()),
-        content: removeVietnameseDiacritics(removeVietnameseDiacritics($("#content").val())),
+        content: removeVietnameseDiacritics(removeVietnameseDiacritics($("#ta-content").val())),
         timestamp: new Date().toISOString()
     }
 
