@@ -14,12 +14,6 @@
     <link rel="stylesheet" href="../../css/common/footer.css" />
     <link rel="stylesheet" href="../../css/common/zalo.css">
     <link rel="stylesheet" href="../../css/common/course-detail-custom.css">
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        id="jquery-core-js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
-        id="jquery-migrate-js"></script>
 </head>
 
 <body
@@ -234,8 +228,7 @@
                                         <div class="icon">
                                             <div class="icon-inner">
                                                 <img decoding="async" width="20" height="20"
-                                                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
-                                                    data-src="https://rikkei.edu.vn/wp-content/uploads/2024/01/icon-kh1.png"
+                                                    src="/img/icon/calendar.png"
                                                     class="lazy-load attachment-medium size-medium" alt="Icon Kh1" />
                                             </div>
                                         </div>
@@ -251,9 +244,7 @@
                                     <div class="icon-box-img" style="width: 20px">
                                         <div class="icon">
                                             <div class="icon-inner">
-                                                <img decoding="async" width="21" height="20"
-                                                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2021%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
-                                                    data-src="https://rikkei.edu.vn/wp-content/uploads/2024/01/icon-kh2.png"
+                                                <img decoding="async" width="21" height="20" src="/img/icon/user.png"
                                                     class="lazy-load attachment-medium size-medium" alt="Icon Kh2" />
                                             </div>
                                         </div>
@@ -270,8 +261,7 @@
                                         <div class="icon">
                                             <div class="icon-inner">
                                                 <img decoding="async" width="20" height="20"
-                                                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
-                                                    data-src="https://rikkei.edu.vn/wp-content/uploads/2024/01/icon-kh1.png"
+                                                    src="/img/icon/contact-form.png"
                                                     class="lazy-load attachment-medium size-medium" alt="Icon Kh1" />
                                             </div>
                                         </div>
@@ -849,9 +839,8 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action="/it-fresher-rikkei-certificate/#wpcf7-f3450-p277-o1" method="post"
-                                    class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate"
-                                    data-status="init">
+                                <form class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate"
+                                    id="consultation-form" data-status="init">
                                     <div style="display: none">
                                         <input type="hidden" name="_wpcf7" value="3450" />
                                         <input type="hidden" name="_wpcf7_version" value="5.8.7" />
@@ -862,47 +851,48 @@
                                     </div>
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
+                                                id="fullname" name="fullname"
                                                 class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                aria-required="true" aria-invalid="false" placeholder="Họ tên" value
-                                                type="text" name="your-name" /></span>
+                                                aria-required="true" aria-invalid="false" placeholder="Họ tên"
+                                                type="text" /></span>
                                     </p>
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40"
+                                                id="email" name="email"
                                                 class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                                                aria-required="true" aria-invalid="false" placeholder="Email" value
-                                                type="email" name="your-email" /></span>
+                                                aria-required="true" aria-invalid="false" placeholder="Email"
+                                                type="email" /></span>
                                     </p>
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="tel-961"><input size="40"
+                                                id="phone" name="phone"
                                                 class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
                                                 aria-required="true" aria-invalid="false" placeholder="Số điện thoại"
-                                                value type="tel" name="tel-961" /></span>
+                                                type="text" /></span>
                                     </p>
                                     <p>
-                                        <span class="wpcf7-form-control-wrap" data-name="menu-153"><select
+                                        <span class="wpcf7-form-control-wrap" data-name="menu-153"><select id="status"
+                                                name="status"
                                                 class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
-                                                aria-required="true" aria-invalid="false" name="menu-153">
-                                                <option value="" disabled selected>
-                                                    Bạn đang là
+                                                aria-required="true" aria-invalid="false">
+                                                <option value="" disabled selected>Bạn đang là</option>
+                                                <option value="Sinh viên">Sinh viên</option>
+                                                <option value="Sinh viên vừa tốt nghiệp">Sinh viên vừa tốt nghiệp
                                                 </option>
-                                                <option value="student">Sinh viên</option>
-                                                <option value="graduate">
-                                                    Sinh viên vừa tốt nghiệp
-                                                </option>
-                                                <option value="employee">Người đang đi làm</option>
-                                                <option value="other">Khác</option>
+                                                <option value="Người đang đi làm">Người đang đi làm</option>
+                                                <option value="Khác">Khác</option>
                                             </select></span>
                                     </p>
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="tel-962">
                                             <textarea class="wpcf7-form-control wpcf7-validates-as-required wpcf7-text"
-                                                aria-required="true" aria-invalid="false"
-                                                placeholder="Nội dung cần tư vấn"></textarea>
+                                                id="content" name="content" rows="4" aria-required="true"
+                                                aria-invalid="false" placeholder="Nội dung cần tư vấn"></textarea>
                                         </span>
                                     </p>
                                     <p>
-                                        <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
-                                            value="Đăng ký ngay" />
+                                        <input class="wpcf7-form-control" type="submit" value="Đăng ký ngay"
+                                            style="margin: auto; display: block;"></input>
                                     </p>
                                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                                 </form>
@@ -974,52 +964,18 @@
             <p>&copy; 2024 Tech Academy. All rights reserved.</p>
         </div>
     </footer>
-
-    <script type="text/javascript"
-        src="https://rikkei.edu.vn/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.7"
-        id="swv-js"></script>
-    <script type="text/javascript" id="flatsome-js-js-extra">
-        /* <![CDATA[ */
-        var flatsomeVars = {
-            theme: { version: "3.18.1" },
-            ajaxurl: "https:\/\/rikkei.edu.vn\/wp-admin\/admin-ajax.php",
-            rtl: "",
-            sticky_height: "70",
-            stickyHeaderHeight: "0",
-            scrollPaddingTop: "0",
-            assets_url:
-                "https:\/\/rikkei.edu.vn\/wp-content\/themes\/hoabinhweb-v3-154\/assets\/",
-            lightbox: {
-                close_markup:
-                    '<button title="%title%" type="button" class="mfp-close"><svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"><\/line><line x1="6" y1="6" x2="18" y2="18"><\/line><\/svg><\/button>',
-                close_btn_inside: false,
-            },
-            user: { can_edit_pages: false },
-            i18n: { mainMenu: "Main Menu", toggleButton: "Toggle" },
-            options: {
-                cookie_notice_version: "1",
-                swatches_layout: false,
-                swatches_disable_deselect: false,
-                swatches_box_select_event: false,
-                swatches_box_behavior_selected: false,
-                swatches_box_update_urls: "1",
-                swatches_box_reset: false,
-                swatches_box_reset_limited: false,
-                swatches_box_reset_extent: false,
-                swatches_box_reset_time: 300,
-                search_result_latency: "0",
-            },
-        };
-        /* ]]> */
-    </script>
-    <script type="text/javascript"
-        src="https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154/assets/js/flatsome.js?ver=039f9485eef603e7c53a"
-        id="flatsome-js-js"></script>
-    <script type="text/javascript"
-        src="https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154/inc/extensions/flatsome-lazy-load/flatsome-lazy-load.js?ver=3.18.1"
-        id="flatsome-lazy-js"></script>
 </body>
 
-</html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    id="jquery-core-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+    id="jquery-migrate-js"></script>
+<script src="/js/lib/flatsome-js-js-extra.js"></script>
+<script src="/js/lib/contact-form-index.js"></script>
+<script src="/js/lib/flatsome.js"></script>
+<script src="/js/lib/flatsome-lazy-load.js"></script>
+<script src="/js/navbar.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/sendFormToSheet.js"></script>
 
-<script src="../../js/navbar.js"></script>
+</html>

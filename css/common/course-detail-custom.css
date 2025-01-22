@@ -6,3 +6,10 @@
 .text.noidung > h2 {
     background: none;
 }
+
+label.error {
+  color: red;
+  font-size: 14px;
+  font-weight: 300;
+}
+

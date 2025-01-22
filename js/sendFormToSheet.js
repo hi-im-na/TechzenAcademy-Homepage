@@ -1,21 +1,4 @@
 $(function () {
-    // $.validator.setDefaults({
-    //     errorElement: "span",
-    //     errorPlacement: function (error, element) {
-    //         error.addClass("invalid-feedback");
-    //         element.closest(".form-group").append(error);
-    //     },
-    //     highlight: function (element, errorClass, validClass
-    //     ) {
-    //         $(element).addClass("is-invalid").removeClass("is-valid");
-    //     }
-    //     ,
-    //     unhighlight: function (element, errorClass, validClass
-    //     ) {
-    //         $(element).addClass("is-valid").removeClass("is-invalid");
-    //     }
-    // });
-
     $("#consultation-form").validate({
         rules: {
             fullname: {
@@ -83,7 +66,8 @@ function removeVietnameseDiacritics(str) {
 
 async function sendForm() {
     $("#submit-btn").attr("disabled", true);
-    $("#submit-btn").html("Sending...");
+    $("#submit-btn").attr("value", "Đang gửi thông tin...");
+    $("#submit-btn").html("Đang gửi thông tin...");
     $("#submit-btn").css("cursor", "not-allowed");
 
     const data = {
@@ -108,7 +92,8 @@ async function sendForm() {
     ).then(res => {
         console.log("reas", res);
         $("#submit-btn").attr("disabled", false);
-        $("#submit-btn").html("Submit");
+        $("#submit-btn").attr("value", "Đăng ký ngay");
+        $("#submit-btn").html("Đăng ký ngay");
         $("#submit-btn").css("cursor", "pointer");
         $("#consultation-form").trigger("reset");
         alert("Your message has been sent successfully.");
@@ -116,29 +101,10 @@ async function sendForm() {
         .catch(err => {
             console.log(err);
             $("#submit-btn").attr("disabled", false);
-            $("#submit-btn").html("Submit");
+            $("#submit-btn").attr("value", "Đăng ký ngay");
+            $("#submit-btn").html("Đăng ký ngay");
             $("#submit-btn").css("cursor", "pointer");
             alert("Something went wrong. Please try again.");
         });
 
-    // const backendUrl = "http://localhost:8080/people";
-
-    // await $.ajax({
-    //     url: backendUrl,
-    //     type: "POST",
-    //     data: JSON.stringify(data),
-    //     contentType: "application/json",
-    //     headers: {
-    //         "Access-Control-Allow-Origin": "*",
-    //         "Access-Control-Allow-Methods": "POST",
-    //         "Access-Control-Allow-Headers": "Content-Type",
-    //     },
-    //     success: function (response) {
-    //         console.log(response);
-    //     },
-    //     error: function (error) {
-    //         console.log(error);
-    //     },
-
-    // });
 };
