@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/img/common/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>
         Khoá học Coding Thực chiến - Techzen Academy
@@ -402,9 +403,9 @@
                                         <h5 class="uppercase">Học phí ưu đãi hấp dẫn</h5>
 
                                         <p>
-                                            Chỉ với 75k cho mỗi buổi,
-                                            học viên sẽ nhận được trải nghiệm tuyệt vời
-                                            cùng chất lượng khoá học vượt mong đợi
+                                            Chỉ với 75k cho mỗi buổi học,
+                                            học viên sẽ nhận được những kiến thức và kỹ năng thực chiến tốt nhất từ
+                                            Techzen cùng chất lượng khoá học vượt mong đợi
                                         </p>
                                     </div>
                                 </div>
@@ -440,12 +441,14 @@
                                         <h3><i class="fa-solid fa-circle-check"></i>Chật vật tìm nơi thực tập</h3>
                                         <p>
                                             Bạn mong muốn có cơ hội thực tập
-                                            để áp dụng kiến thức, rèn kỹ năng,
+                                            để áp dụng kiến thức, rèn luyện kỹ năng,
                                             hoặc đơn giản chỉ cần dấu mộc thực tập
                                         </p>
                                         <hr />
                                         <h3><i class="fa-solid fa-circle-check"></i>Thiếu kinh nghiệm thực tế</h3>
-                                        Không rõ nhà tuyển dụng cần gì, chưa biết nên học và làm từ đâu<br />
+                                        Không rõ nhà tuyển dụng cần gì, bạn cần chuẩn bị gì, làm thế nào để ứng tuyển
+                                        thành công và tự tin trong phỏng vấn.
+                                        <br />
                                         <hr />
                                         <h3><i class="fa-solid fa-circle-check"></i>Không có định hướng rõ ràng</h3>
                                         <p>
@@ -482,7 +485,7 @@
 
                                 <p>
                                     Mentor theo sát giúp học viên hoàn thành hết các nhiệm vụ
-                                    trong ngày. Không bỏ rơi lại học viên trong bất kỳ trường
+                                    trong ngày. Không bỏ rơi học viên trong bất kỳ trường
                                     hợp nào
                                 </p>
                             </div>
@@ -502,7 +505,7 @@
                                 </h5>
 
                                 <p>
-                                    Tất cả học viên đều được tham giathực chiến và sở hữu ít
+                                    Tất cả học viên đều được tham gia thực chiến và sở hữu ít
                                     nhất 1 dự án trước khi tốt nghiệp
                                 </p>
                             </div>
@@ -522,7 +525,7 @@
                                 </h5>
 
                                 <p>
-                                    Cam kết việc làm với học viên tốt nghiệp xuất sắc theo tiêu
+                                    Cam kết việc làm đối với học viên tốt nghiệp xuất sắc theo tiêu
                                     chí đánh giá doanh nghiệp
                                 </p>
                             </div>
@@ -583,9 +586,8 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action="/it-fresher-rikkei-certificate/#wpcf7-f3450-p277-o1" method="post"
-                                    class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate"
-                                    data-status="init">
+                                <form class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate"
+                                    id="consultation-form" data-status="init">
                                     <div style="display: none">
                                         <input type="hidden" name="_wpcf7" value="3450" />
                                         <input type="hidden" name="_wpcf7_version" value="5.8.7" />
@@ -596,26 +598,30 @@
                                     </div>
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
+                                                id="fullname" name="fullname"
                                                 class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                aria-required="true" aria-invalid="false" placeholder="Họ tên" value
-                                                type="text" name="your-name" /></span>
+                                                aria-required="true" aria-invalid="false" placeholder="Họ tên"
+                                                type="text" /></span>
                                     </p>
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40"
+                                                id="email" name="email"
                                                 class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                                                aria-required="true" aria-invalid="false" placeholder="Email" value
-                                                type="email" name="your-email" /></span>
+                                                aria-required="true" aria-invalid="false" placeholder="Email"
+                                                type="email" /></span>
                                     </p>
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="tel-961"><input size="40"
+                                                id="phone" name="phone"
                                                 class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
                                                 aria-required="true" aria-invalid="false" placeholder="Số điện thoại"
-                                                value type="tel" name="tel-961" /></span>
+                                                type="text" /></span>
                                     </p>
                                     <p>
-                                        <span class="wpcf7-form-control-wrap" data-name="menu-153"><select
+                                        <span class="wpcf7-form-control-wrap" data-name="menu-153"><select id="status"
+                                                name="status"
                                                 class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
-                                                aria-required="true" aria-invalid="false" name="menu-153">
+                                                aria-required="true" aria-invalid="false">
                                                 <option value="" disabled selected>Bạn đang là</option>
                                                 <option value="student">Sinh viên</option>
                                                 <option value="graduate">Sinh viên vừa tốt nghiệp</option>
@@ -626,13 +632,13 @@
                                     <p>
                                         <span class="wpcf7-form-control-wrap" data-name="tel-962">
                                             <textarea class="wpcf7-form-control wpcf7-validates-as-required wpcf7-text"
-                                                aria-required="true" aria-invalid="false"
-                                                placeholder="Nội dung cần tư vấn"></textarea>
+                                                id="content" name="content" rows="4" aria-required="true"
+                                                aria-invalid="false" placeholder="Nội dung cần tư vấn"></textarea>
                                         </span>
                                     </p>
                                     <p>
-                                        <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
-                                            value="Đăng ký ngay" />
+                                        <input class="wpcf7-form-control" type="submit" value="Đăng ký ngay"
+                                            style="margin: auto; display: block;"></input>
                                     </p>
                                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                                 </form>
@@ -748,7 +754,9 @@
         src="https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154/inc/extensions/flatsome-lazy-load/flatsome-lazy-load.js?ver=3.18.1"
         id="flatsome-lazy-js"></script>
 </body>
+<script src="../../js/navbar.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/sendFormToSheet.js"></script>
+
 
 </html>
-
-<script src="../../js/navbar.js"></script>
